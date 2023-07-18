@@ -1,0 +1,14 @@
+public class Default_constructor {
+
+	void car() {
+		System.out.println("car is going very fast");
+	}
+
+	public static void main(String[] args) {
+		Default_constructor obj = new Default_constructor();
+		obj.car();
+	}
+}
+
+// the default contructor is used to provide default value to the object 
+// like null,0 etc..,
