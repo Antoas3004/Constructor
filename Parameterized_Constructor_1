@@ -1,0 +1,29 @@
+public class Parameterized_Constructor_1 {
+	// instance variable
+	int n;
+	String name;
+
+	// create Parameterized Constructor
+	Parameterized_Constructor_1(int i, String na) {
+		n = i;
+		name = na;
+	}
+
+	// create method
+	void test() {
+		System.out.println(n + " " + name);
+	}
+
+	public static void main(String[] args) {
+		// object creation
+		Parameterized_Constructor_1 obj = new Parameterized_Constructor_1(123, "anto");
+		obj.test();
+		Parameterized_Constructor_1 obj1 = new Parameterized_Constructor_1(345, "no one");
+		obj1.test();
+	}
+}
+/*
+ * parameterized_Constructor is passing the value through th obj creation to
+ * parameterized_Constructor and the constructor passing the value to instance
+ * variable and method called instance varibale
+ */
