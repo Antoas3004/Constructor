@@ -1,0 +1,36 @@
+public class Parameterized_Constructor_3 {
+
+	// instance variables
+	int empId;
+	double empSalary;
+	String empName;
+	char empGrade;
+
+	// Parameterized_Constructor with 4 variable
+	// both local and instance varoable name is same then we use this keyword
+	Parameterized_Constructor_3(int empId, double empSalary, String empName, char empGrade) {
+		this.empId = empId;
+		this.empSalary = empSalary;
+		this.empName = empName;
+		this.empGrade = empGrade;
+	}
+
+	// Parameterized_Constructor with 3 variables
+	Parameterized_Constructor_3(int empId, double empSalary, String empName) {
+		this.empId = empId;
+		this.empSalary = empSalary;
+		this.empName = empName;
+	}
+
+	// method
+	void test() {
+		System.out.println(empId + " " + empSalary + " " + empName + " " + empGrade);
+	}
+
+	public static void main(String[] args) {
+		Parameterized_Constructor_3 obj = new Parameterized_Constructor_3(1, 20000, "anto", 'A');
+		obj.test();
+		Parameterized_Constructor_3 obj1 = new Parameterized_Constructor_3(1, 20000, "anto");
+		obj1.test();
+	}
+}
