@@ -1,0 +1,17 @@
+public class Default_constructor_2 {
+	int n;
+	String name;
+
+	void test() {
+		System.out.println(n + " " + name);
+	}
+
+	public static void main(String[] args) {
+		Default_constructor_2 obj = new Default_constructor_2();
+		obj.test();
+	}
+}
+/*
+ * if we dont give a value to the variables then th defalut constructor gives a
+ * default value 0,null
+ */
