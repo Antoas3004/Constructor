@@ -1,0 +1,42 @@
+public class Parameterized_Constructor_2 {
+
+	// Constructor over loading
+
+	// instance variale
+	int a;
+	String b;
+	double c;
+
+	// three Parameterized_Constructor
+	Parameterized_Constructor_2(int d, String e, double f) {
+		a = d;
+		b = e;
+		c = f;
+	}
+
+	// two Parameterized_Constructor
+	Parameterized_Constructor_2(int d, String e) {
+		a = d;
+		b = e;
+	}
+
+	// method
+	void test() {
+		System.out.println(a + " " + b + " " + c);
+	}
+
+	public static void main(String[] args) {
+		// object creation
+		Parameterized_Constructor_2 obj = new Parameterized_Constructor_2(123, "anto", 20000);
+		Parameterized_Constructor_2 obj1 = new Parameterized_Constructor_2(456, "anto a");
+		obj.test();
+		obj1.test();
+	}
+}
+/*
+ * in this Parameterized_Constructor we create two Parameterized_Constructor
+ * with diffrent parameters java compailer assing the value accourding to the
+ * constructor and other value are passed by default constructor -two
+ * Parameterized_Constructor are created -one with three variables -another one
+ * is three variables
+ */
